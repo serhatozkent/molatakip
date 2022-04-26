@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">molatakip</string>
+    <string name="title_activity_main">molatakip</string>
+    <string name="package_name">com.erc.molatakip</string>
+    <string name="custom_url_scheme">com.erc.molatakip</string>
+</resources>

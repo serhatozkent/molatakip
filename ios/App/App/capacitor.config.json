@@ -1,0 +1,6 @@
+{
+	"appId": "com.erc.molatakip",
+	"appName": "molatakip",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
