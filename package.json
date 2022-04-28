@@ -1,6 +1,7 @@
 {
   "name": "deneme",
   "version": "0.1.0",
+  "homepage": "https://hbysmobil.erciyes.edu.tr/molatakip/",
   "private": true,
   "dependencies": {
     "@capacitor/android": "^3.4.3",

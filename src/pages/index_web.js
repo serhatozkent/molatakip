@@ -1,6 +1,8 @@
 import AccoutPage from "./Account";
 import CheckPage from "./Check";
+import LoginPage from "./Login";
 import Layout from "../components/Layout";
+import CreateUser from "./CreateUser";
 import { Navigate } from "react-router-dom";
 const router = (islogin) => [
   {
@@ -18,20 +20,12 @@ const router = (islogin) => [
     ],
   },
   {
-    path: "/molatakip/login",
-    element: islogin ? (
-      <Navigate to="/molatakip/app" />
-    ) : (
-      <Navigate to="/molatakip/login" />
-    ),
+    path: `${process.env.PUBLIC_URL}/login`,
+    element: islogin ? <Navigate to="/molatakip/app" /> : <LoginPage />,
   },
   {
-    path: "/molatakip/CreateUser",
-    element: islogin ? (
-      <Navigate to="/molatakip/app" />
-    ) : (
-      <Navigate to="/molatakip/CreateUser" />
-    ),
+    path: `${process.env.PUBLIC_URL}/create`,
+    element: islogin ? <Navigate to="/molatakip/app" /> : <CreateUser />,
   },
   {
     path: "*",

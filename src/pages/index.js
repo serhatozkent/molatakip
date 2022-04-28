@@ -24,7 +24,7 @@ const router = (islogin) => [
     element: islogin ? <Navigate to="/app" /> : <LoginPage />,
   },
   {
-    path: "/createUser",
+    path: "/create",
     element: islogin ? <Navigate to="/app" /> : <CreateUser />,
   },
   {

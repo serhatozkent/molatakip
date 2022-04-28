@@ -9,7 +9,6 @@ import {
   Typography,
   Box,
   CssBaseline,
-  Link,
   Avatar,
   Stack,
   IconButton,
@@ -28,6 +27,7 @@ import {} from "../../theme";
 import logo1 from "../../img/2.jpg";
 import logo2 from "../../img/200.png";
 import api from "api";
+import { Link } from "react-router-dom";
 const LoginPage = () => {
   const [telefon, setTelefon] = useState(null);
   const [parola, setParola] = useState(null);
@@ -174,11 +174,8 @@ const LoginPage = () => {
               sx={{ paddingTop: 2, paddingBottom: 2, alignItems: "center" }}
             >
               <PersonAddAlt sx={{ padding: 1 }} />
-              <Link
-                href="CreateUser"
-                variant="body2"
-                sx={{ alignItems: "center" }}
-              >
+
+              <Link to="/create" variant="body2" sx={{ alignItems: "center" }}>
                 {"Üye Olmak İçin Tıklayın"}
               </Link>
             </Stack>

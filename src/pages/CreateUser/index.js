@@ -18,6 +18,7 @@ import api from "api";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import logo1 from "../../img/2.jpg";
 import MuiAlert from "@mui/material/Alert";
+import { Navigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [telefon, setTelefon] = useState("");
@@ -163,7 +164,10 @@ const LoginPage = () => {
         console.log("successSmsMesaj:", response.data);
 
         if (hata2 === true) {
-          window.location.href = "Login";
+          console.log("İf e girdi:", hata2);
+
+          window.location.href = "molatakip";
+
           /*setOpen(true);
           setHata("Girilen Sms Kodu Başarılı.");
           setHatatur("success");*/
